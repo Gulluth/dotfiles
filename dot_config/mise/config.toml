@@ -1,0 +1,11 @@
+[tools]
+bat = "latest"
+btop = "latest"
+chezmoi = "latest"
+lsd = "latest"
+mdbook = "latest"
+node = "latest"
+rust = "latest"
+starship = "latest"
+"ubi:ifd3f/caligula" = "latest"
+yq = "latest"
