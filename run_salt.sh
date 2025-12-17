@@ -21,4 +21,4 @@ if [[ ! -x "/usr/bin/salt-minion" ]]; then
 fi
 
 # Provision system using masterless salt
-sudo salt-call --file-root=/home/gulluth/.provision --local state.highstate
+sudo salt-call --file-root=/home/${USER}/.provision --local state.highstate
