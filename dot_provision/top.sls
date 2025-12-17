@@ -2,4 +2,4 @@ base:
   '*':
     - development
     - flatpak
-    - utils
+    - utilities

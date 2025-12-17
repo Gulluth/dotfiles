@@ -1,9 +1,12 @@
 {% set items = [
-  "git",
-  "jq",
-  "tig",
-  "yq",
+  "bat",
+  "btop",
+  "lsd",
+  "tree",
+  "tmux",
+  "vim"
 ] %}
+
 
 {% for i in items %}
 {{ i }}:

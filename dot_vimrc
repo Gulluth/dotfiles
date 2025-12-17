@@ -1,0 +1,112 @@
+if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
+
+set nocompatible
+filetype off
+
+if !isdirectory(expand("~/.vim/bundle/Vundle.vim/.git"))
+  !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+endif
+
+set runtimepath+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+" Use :PluginInstall to install the following plugins
+Plugin 'gmarik/Vundle.vim'
+
+" Color Schemes
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'freeo/vim-kalisi'
+Plugin 'w0ng/vim-hybrid'
+
+" Git Tools
+Plugin 'tpope/vim-fugitive'
+
+" Syntax Highlighting
+Plugin 'saltstack/salt-vim'
+Plugin 'tpope/vim-markdown'
+
+" Trailing Whitespace Highlighting
+" use :StripWhitespace to remove trailing whitespace
+Plugin 'ntpeters/vim-better-whitespace'
+
+" Utilities
+Plugin 'bling/vim-airline'
+Plugin 'Yggdroot/indentLine'
+Plugin 'kien/ctrlp.vim'
+
+call vundle#end()
+
+" Enable Airline
+set laststatus=2
+
+" Enable filetype and plugins
+filetype on
+filetype plugin on
+
+" airline
+let g:airline#extensions#branch#enabled = 1
+
+" powerline symbols
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols_branch = ''
+let g:airline_symbols_readonly = ''
+let g:airline_symbols_linenr = ''
+
+" indentLine
+let g:indentLine_loaded=1
+let g:indentLine_char = '┊'
+
+" set colorscheme
+set t_Co=256
+set background=dark
+
+if filereadable( expand("$HOME/.vim/bundle/vim-hybrid/colors/hybrid.vim") )
+  colorscheme hybrid
+endif
+
+" enable spell checking
+set spell
+" use z= to suggest corrections
+" use zg to add a word to the dictionary
+set spellsuggest=best,4
+" disable spellcapcheck
+set spellcapcheck=
+
+" syntax highlighting
+syntax enable
+
+" Unset the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
+
+" set options
+set history=50     " keep 50 lines of command line history
+set ruler          " show the cursor position all the time
+set cmdheight=1    "
+set number         " line numbers
+set lazyredraw
+set hidden
+set expandtab      " expand tabs to spaces
+set tabstop=2      " define what our tabs are
+set softtabstop=2  " soft tabstop
+set mouse-=a
+
+set bs=indent,eol,start " allow backspacing over everything in insert mode
+
+set ignorecase
+set smartcase
+
+" disable bell
+set noerrorbells
+set novisualbell
+
+" show hidden characters
+set list
+set listchars=tab:»·,trail:·
+
