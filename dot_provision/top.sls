@@ -1,0 +1,5 @@
+base:
+  '*':
+    - development
+    - flatpak
+    - utils
