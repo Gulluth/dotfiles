@@ -1,6 +1,11 @@
 {% set items = [
   "fcitx5",
-  "libreoffice",
+  "libreoffice-calc",
+  "libreoffice-impress",
+  "libreoffice-math",
+  "libreoffice-writer",
+  "libreoffice-common",
+  "libreoffice-style-sifr"
 ] %}
 
 
@@ -8,3 +13,7 @@
 {{ i }}:
   pkg.purged
 {% endfor %}
+
+auto-remove:
+  cmd.run:
+    - name: apt autoremove -y
