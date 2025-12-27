@@ -3,11 +3,11 @@ base:
     - absent
   'disabled':
     - zed
-  'longhorn':
+  'longhorn*':
     - development
     - flatpak
     - mise
     - multimedia
     - utilities
-  'satellite':
+  'satellite*':
     - utilities
