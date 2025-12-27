@@ -12,10 +12,10 @@ if [[ ! -x "/usr/bin/salt-minion" ]]; then
     
     # Update package sources
     sudo apt update
-    
+
     # Install LTS salt minion
-    sudo apt install -y salt-common=3006.17 salt-minion=3006.17
-    
+    sudo apt install -y salt-common=3006.* salt-minion=3006.*
+
     # Pin LTS version of salt
     sudo apt-mark hold salt-minion
 fi
