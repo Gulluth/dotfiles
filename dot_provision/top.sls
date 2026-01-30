@@ -5,11 +5,11 @@ base:
   'nulldevice':
     - development
     - flatpak
+    - multimedia
     - utilities
     - yt-dlp
   'satellite*':
     - utilities
   'disabled':
-    - zed
     - mise
-    - multimedia
+    - zed
