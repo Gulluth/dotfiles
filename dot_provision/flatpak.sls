@@ -1,6 +1,5 @@
 {% set flatpak_packages = [
-    "com.bitwarden.desktop",
-    "io.github.ungoogled_software.ungoogled_chromium"
+    "com.bitwarden.desktop"
 ] %}
 
 flatpak:

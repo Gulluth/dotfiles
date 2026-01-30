@@ -8,8 +8,8 @@ What this does:
 
 Salt will target specific hosts for configuration, if building a host from this list, set the hostname of the system prior to installing chezmoi.
 
-`sudo echo 'longhorn' >> /etc/hostname && sudo reboot`
+`sudo echo 'nulldevice' >> /etc/hostname && sudo reboot`
 
 If you miss this step, the minion_id will need to be adjusted as well:
 
-`sudo echo 'longhorn' >> /etc/salt/minion_id`
+`sudo echo 'nulldevice' >> /etc/salt/minion_id`

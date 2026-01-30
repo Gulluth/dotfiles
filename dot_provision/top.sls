@@ -1,13 +1,13 @@
 base:
   '*':
     - absent
-  'disabled':
-    - zed
-  'longhorn*':
+  'nulldevice':
     - development
     - flatpak
-    - mise
-    - multimedia
     - utilities
   'satellite*':
     - utilities
+  'disabled':
+    - zed
+    - mise
+    - multimedia
