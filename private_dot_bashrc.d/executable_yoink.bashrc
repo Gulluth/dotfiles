@@ -1,14 +1,2 @@
-# Shell
-alias ll='ls -l'
-
-# Music
-alias m="mpc --host localhost"
-alias nextsong="mpc --host=localhost next"
-
 # Requires yt-dlp
 alias snagaudio="yt-dlp --sleep-interval 10 --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail --add-metadata --metadata-from-title \"%(title)s\" --parse-metadata \"title:%(title)s\" --parse-metadata \"uploader:%(artist)s\" --output \"%(title)s.%(ext)s\""
-
-alias fish="pushd /media/gulluth/Seagate/Fishing/tv"
-
-# Utilities
-alias top="btop"
