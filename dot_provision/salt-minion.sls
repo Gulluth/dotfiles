@@ -1,3 +1,3 @@
 salt-minion:
   service.dead:
-    - enable: Flase
+    - enable: False
