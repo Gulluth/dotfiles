@@ -121,3 +121,9 @@ export NVM_DIR="$HOME/.nvm"
 if [ -x "$(command -v go)" ]; then
     PATH="$PATH:$(go env GOPATH)/bin"
 fi
+
+
+# Load environment from .bashrc.d
+for file in ~/.bashrc.d/*.bashrc; do
+    source "$file"
+done
