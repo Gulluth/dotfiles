@@ -5,6 +5,7 @@ base:
   'nulldevice':
     - development
     - flatpak
+    - fsearch
     - multimedia
     - utilities
     - yt-dlp

@@ -1,0 +1,2 @@
+fsearch:
+  pkg.installed
