@@ -7,6 +7,8 @@ base:
     - flatpak
     - fsearch
     - multimedia
+    - pip
+    - python
     - utilities
     - yt-dlp
   'satellite*':
