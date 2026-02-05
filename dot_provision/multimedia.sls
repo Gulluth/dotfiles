@@ -1,6 +1,7 @@
 {% set items = [
   "ffmpeg",
-  "mpv"
+  "mpv",
+  "sox"
 ] %}
 
 
