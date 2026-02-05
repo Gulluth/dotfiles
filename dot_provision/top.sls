@@ -6,6 +6,7 @@ base:
     - development
     - flatpak
     - fsearch
+    - go
     - multimedia
     - pip
     - python
