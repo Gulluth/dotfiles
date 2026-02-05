@@ -8,6 +8,7 @@ base:
     - fsearch
     - go
     - multimedia
+    - pdf
     - pip
     - python
     - utilities
